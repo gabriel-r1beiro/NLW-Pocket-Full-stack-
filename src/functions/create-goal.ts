@@ -3,18 +3,18 @@ import { goals } from '../db/schema'
 
 interface CreateGoalRequest {
   title: string
-  desiredWeekFrequency: number
+  desiredWeeklyFrequency: number
 }
 
 export async function createGoal({
   title,
-  desiredWeekFrequency,
+  desiredWeeklyFrequency,
 }: CreateGoalRequest) {
   const result = await db
     .insert(goals)
     .values({
       title,
-      desiredWeekFrequency,
+      desiredWeeklyFrequency,
     })
     .returning()
 
