@@ -1,4 +1,4 @@
 # NLW Pocket - JavaScript
 Rocketseat
 
-Beck + Front
+BeckEnd + FrontEnd
